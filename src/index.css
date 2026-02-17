@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Improve fullscreen experience on mobile/desktop */
+canvas:fullscreen {
+  width: 100vw !important;
+  height: 100vh !important;
+  border-radius: 0 !important;
+}
+
+canvas:-webkit-full-screen {
+  width: 100vw !important;
+  height: 100vh !important;
+  border-radius: 0 !important;
+}
+
+/* Prevent rubber-banding on some mobile browsers while interacting */
+html, body {
+  overscroll-behavior: none;
+}
